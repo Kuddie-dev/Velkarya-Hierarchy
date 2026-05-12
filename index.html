@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Velkarya Hierarchy</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#0f172a;
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+header{
+    background:#111827;
+    padding:25px;
+    text-align:center;
+    border-bottom:2px solid #334155;
+}
+
+header h1{
+    margin:0;
+    font-size:40px;
+}
+
+header p{
+    color:#94a3b8;
+}
+
+#mainPage{
+    padding:40px;
+}
+
+.hierarchy{
+    text-align:center;
+    white-space:pre-line;
+    line-height:2.1;
+    font-size:18px;
+}
+
+.role{
+    color:#7dd3fc;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+.role:hover{
+    color:white;
+}
+
+.page{
+    display:none;
+    max-width:900px;
+    margin:auto;
+    padding:40px;
+}
+
+.card{
+    background:#111827;
+    border:1px solid #334155;
+    border-radius:15px;
+    padding:30px;
+}
+
+.card h1{
+    margin-top:0;
+}
+
+.card p{
+    line-height:1.8;
+    color:#d1d5db;
+}
+
+.back{
+    display:inline-block;
+    margin-top:20px;
+    background:#2563eb;
+    padding:12px 22px;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+}
+
+.back:hover{
+    background:#3b82f6;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Velkarya Community Hierarchy</h1>
+<p>Official role hierarchy of the Velkarya community.</p>
+</header>
+
+<div id="mainPage">
+
+<div class="hierarchy">
+
+════════════════════════════════ 👑 Founder ════════════════════════════════
+
+                                         │
+
+        ┌────────────────────────────────┼────────────────────────────────┐
+        │                                │                                │
+
+<span class="role" onclick="openPage('highadmin')">⚖️ High Administrator</span>
+
+<span class="role" onclick="openPage('highcoord')">🌍 High Coordinator</span>
+
+<span class="role" onclick="openPage('veladmin')">🛡️ Velkapedian Administrator</span>
+
+        │                                │                                │
+
+        │                 ┌──────────────┼──────────────┐                 ┼───────────────────┐──────────────────────┐
+        │                 │              │              │                 │                   │                      │
+
+<span class="role" onclick="openPage('warcoord')">⚔️ War Coordinator</span>
+
+<span class="role" onclick="openPage('economiccoord')">💰 Economic Coordinator</span>
+
+<span class="role" onclick="openPage('dipcoord')">🌐 Diplomatic Coordinator</span>
+
+<span class="role" onclick="openPage('lorebuilder')">🏗️ Lore Builder</span>
+
+<span class="role" onclick="openPage('categorymanager')">📂 Category Manager</span>
+
+<span class="role" onclick="openPage('moderator')">🧹 Moderator</span>
+
+        │
+        │        ┌────────┼────────┐
+        │        │        │        │
+
+<span class="role" onclick="openPage('militaryrp')">🪖 Military RP Coordinator</span>
+
+<span class="role" onclick="openPage('industrialrp')">🏭 Industrial RP Coordinator</span>
+
+<span class="role" onclick="openPage('governmentrp')">🏛️ Government RP Coordinator</span>
+
+        │
+
+        └──────────────────────────── <span class="role" onclick="openPage('mapper')">🗺️ Mapper</span>
+
+                                         │
+
+                                   <span class="role" onclick="openPage('historian')">📜 Historian</span>
+
+                                         │
+
+                                      <span class="role" onclick="openPage('citizen')">👤 Citizen</span>
+
+</div>
+</div>
+
+<!-- ROLE PAGES -->
+
+<div id="highadmin" class="page">
+<div class="card">
+<h1>High Administrator</h1>
+<p>
+Administrator tingkat tertinggi yang membantu Founder mengelola komunitas,
+menegakkan aturan, dan menjaga stabilitas roleplay Velkarya.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="highcoord" class="page">
+<div class="card">
+<h1>High Coordinator</h1>
+<p>
+Koordinator utama seluruh sistem roleplay dan perkembangan dunia Velkarya.
+Mengawasi seluruh coordinator dan event besar komunitas.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="veladmin" class="page">
+<div class="card">
+<h1>Velkapedian Administrator</h1>
+<p>
+Administrator wiki yang bertugas menjaga struktur, kualitas artikel,
+dan kestabilan Velkawiki.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="warcoord" class="page">
+<div class="card">
+<h1>War Coordinator</h1>
+<p>
+Mengawasi sistem perang dan konflik militer dalam roleplay Velkarya.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="economiccoord" class="page">
+<div class="card">
+<h1>Economic Coordinator</h1>
+<p>
+Mengatur sistem ekonomi, resource, perdagangan, dan perkembangan industri dunia.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="dipcoord" class="page">
+<div class="card">
+<h1>Diplomatic Coordinator</h1>
+<p>
+Mengawasi hubungan diplomatik, treaty, aliansi, dan organisasi internasional.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="lorebuilder" class="page">
+<div class="card">
+<h1>Lore Builder</h1>
+<p>
+Membantu mengembangkan sejarah, budaya, organisasi, dan worldbuilding Velkarya.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="categorymanager" class="page">
+<div class="card">
+<h1>Category Manager</h1>
+<p>
+Mengatur kategori artikel dan menjaga struktur wiki tetap rapi dan mudah digunakan.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="moderator" class="page">
+<div class="card">
+<h1>Moderator</h1>
+<p>
+Menjaga ketertiban komunitas dan membantu administrasi dasar.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="militaryrp" class="page">
+<div class="card">
+<h1>Military RP Coordinator</h1>
+<p>
+Mengatur roleplay militer, operasi perang, dan keseimbangan konflik.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="industrialrp" class="page">
+<div class="card">
+<h1>Industrial RP Coordinator</h1>
+<p>
+Mengawasi pembangunan industri, infrastruktur, dan produksi resource.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="governmentrp" class="page">
+<div class="card">
+<h1>Government RP Coordinator</h1>
+<p>
+Mengatur roleplay pemerintahan, politik domestik, dan stabilitas negara.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="mapper" class="page">
+<div class="card">
+<h1>Mapper</h1>
+<p>
+Membuat dan mengedit map dunia Velkarya, termasuk border dan geopolitik.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="historian" class="page">
+<div class="card">
+<h1>Historian</h1>
+<p>
+Mendokumentasikan sejarah, perang, timeline, dan event besar dunia Velkarya.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<div id="citizen" class="page">
+<div class="card">
+<h1>Citizen</h1>
+<p>
+Member biasa komunitas yang dapat membuat negara, lore, artikel, dan berpartisipasi dalam roleplay.
+</p>
+<a class="back" onclick="goBack()">Back to Hierarchy</a>
+</div>
+</div>
+
+<script>
+
+function openPage(pageId){
+
+document.getElementById("mainPage").style.display="none";
+
+let pages=document.querySelectorAll(".page");
+
+pages.forEach(page=>{
+page.style.display="none";
+});
+
+document.getElementById(pageId).style.display="block";
+
+}
+
+function goBack(){
+
+document.getElementById("mainPage").style.display="block";
+
+let pages=document.querySelectorAll(".page");
+
+pages.forEach(page=>{
+page.style.display="none";
+});
+
+}
+
+</script>
+
+</body>
+</html>
